@@ -1,0 +1,123 @@
+body, html{
+  width: 100%;
+  height: 100%;
+}
+
+a{
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.header{
+  background-image: url(https://dav31d.files.wordpress.com/2012/01/background_stock324_by_sophiefzy-d4m38rv.jpg);
+  height: 500px;
+}
+
+.container{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.header-background{
+  position: relative;
+  background: gray;
+  opacity: 0.2;
+  height: 500px;
+}
+
+.empty{
+  height: 60px;
+}
+
+.footer{
+  background: gray;
+  color: white;
+  height: 60px;
+  margin-top:-60px;
+}
+
+.header-navbar li a:hover{
+  color: #3e3e3e;
+}
+
+.mac-img{
+  float: right;
+  padding: 0px;
+  margin: 0px;
+  height: 400px;
+  width: 400px;
+}
+
+
+.logo-img{
+  padding: 0px;
+  width: 60px;
+  height: 60px;
+}
+
+.header-navbar{
+  margin: 0px;
+  padding: 0px;
+  margin-top: -50px;
+}
+
+.header-h2-text{
+  margin: 0px;
+  color: white;
+  font-size: 30px;
+}
+
+.header-text{
+  font-size: 20px;
+  width: 500px;
+  color: white;
+}
+
+.header-navbar li{
+  line-height: 45px;
+  font-weight: bold;
+  display: block;
+  position: relative;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: right;
+  list-style: none;
+}
+
+.clearfix::before,
+.clearfix::after{
+  content: " ";
+  display: table;
+}
+
+.clearfix::after{
+  clear: both;
+}
+
+.header-content-but a{
+  position: relative;
+  display: inline-block;
+}
+
+.header-content-but{
+  padding: 0px;
+  margin: 0px;
+  height: 50px;
+  width: 200px;
+  font-weight: bold;
+  font-size: 15;
+  color: white;
+  background-color: blue;
+  border-radius: 7px;
+  border-color: blue;
+  border: 0px;
+  radius: 10px;
+}

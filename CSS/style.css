@@ -1,0 +1,35 @@
+* {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(68, 80, 87);
+}
+
+.conteiner{
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+#header{
+  font-size: 15px;
+}
+
+#link1{
+  color:rgb(66, 224, 46);
+  font-size: 25px;
+}
+
+#link1:hover{
+  font-size: 30px;
+  color: rgb(202, 41, 222);
+}
+
+#link1:active {
+  color: rgb(242, 0, 255);
+}
+
+#link1:visited {
+  color: rgb(252, 151, 73);
+}
