@@ -6,15 +6,58 @@
 	<script type="text/javascript" src="main.js"></script>
 </head>
 <body id="container">
-	текстовый узел
-	<div id="d1">див 1</div>
-	<div id="d2" class="class1">див 2</div>
-	<div id="d3" class="class1">div3</div>
-	<div>privet</div>
-	<a href="loftblog.ru"></a>
-	<div class="class2">еще привет!</div>
-	<input type="text" name="myName">
-	<input type="text" name="myName">
-	<input type="text" name="myName">	
+	<input type="text" id="myInput">
+	<a href="">ссылка</a>
+	<a href="">ссылка</a>
+	<a href="">ссылка</a>
+	<a href="">ссылка</a>
+	<div>new div</div>
+	<a href="">ссылка</a>
+	<a href="">ссылка</a>
+	<a href="">ссылка</a>
+	<a href="">ссылка</a>
+	<a href="">ссылка</a>
+	<div>
+		<a id="myLink" href="#">ссылка</a>
+	</div>
+<!-- 	
+текстовый узел
+<div id="d1">див 1</div>
+<div id="d2" class="class1">див 2</div>
+<div id="d3" class="class1">div3</div>
+<div>privet</div>
+<a id="myLink" href="loftblog.ru"></a>
+<div class="class2">еще привет!</div>
+<input type="text" name="myName">
+<input type="text" name="myName">
+<input type="text" name="myName">	
+ -->
+ 	<script>
+		myLink.addEventListener('click', function(event){
+		alert('тип события: ' + event.type);
+		alert('фаза события: ' + event.eventPhase);
+ 		});
+
+ 		container.addEventListener('click', function(event){
+ 			if(event.target.tagName == "A"){
+ 				event.preventDefault();
+ 				alert(event.target.getAttribute('href'));
+ 			}		
+ 		}, true);
+
+ 		function handleKeyboard(event) {
+ 			if(event.keyCode < 48 || event.keyCode > 57){
+ 				event.preventDefault();
+ 			}
+ 		}
+
+ 		myInput.addEventListener('keypress', handleKeyboard);
+
+ 		myInput.addEventListener('keydown',handleKeyboard);
+
+ 		myInput.addEventListener('keypress', handleKeyboard);
+
+ 		myInput.addEventListener('keyup', handleKeyboard);
+ 	</script>
 </body>
 </html>

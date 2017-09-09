@@ -48,8 +48,31 @@ document.querySelectorAll('.class1'); //найти все элементы, по
 	tagname -имя тега узла
 
 	getAttribute(name) получить значение атрибута по его имени
-	getAttribute(name, value) установить значение атрибута по его имени
+	setAttribute(name, value) установить значение атрибута по его имени
 	removeAttribute(name) удалить атрибут по его имени
+
+						События (Dom events) - события мыши
+
+	mousedown - нажата кнопка мыши
+	mouseup - отпущена кнопка мыши
+	click - клик кнопкой мыши
+	dbclick - двойной клик кнопкой мыши
+	mouseover - курсор вошел в рамки элемента
+	mouseenter - курсор вошел в рамки элемента (событие не всплывает)
+	mousemove - курсор двигается над поверхностью элемента
+	mouseout - курсор выше лза рамки элемента
+	mouseleave - курсор вышел за рамки элемента(событие не всплывает)
+	contextmenu - вызов контекстного меню правой кнопки мыши
+	wheele - вражение колеса мыши(имеет разные реализации в браузерах)
+
+
+						Делегирование
+
+	Делегирование - процесс, при котором родительский эелемнт обрабатывает самостоятельно все или некоторые 
+	события, предназначенные для его потомков.
+	При таком подходе, нет смысла назначать обработчики на элменты-потомки. Можно даже запретить потомкам получать
+	события, при помощи метода stopPropagation в обработчике родительского элемента.
+	Чаще всего используется в целях оптимизации
 */
 
 
@@ -64,8 +87,21 @@ container.appendChild(newDiv);
 container.insertBefore(newDiv, container.firstChild);
 
 d2.remove();
+
 container.removeChild(d1);
 container.innerHTML;
 container.innerHTML = "<div>new div</div>"; стереть все и запить новую информацию
 сontainer.outerHTML;
+
+myLink.getAttribute('href');
+myLink.setAttribute('href', 'newSite.org');
+myLink.removeAttribute('href');
+
+
+myLink.addEventListener('click', function(event){
+	alert('тип события: ' + event.type);
+	alert('фаза события: ' + event.eventPhase);
+});
+
+
 */
